@@ -1,15 +1,16 @@
 
-#ifndef MENUSTATE_HPP
-#define MENUSTATE_HPP
+#ifndef PLAYSTATE_HPP
+#define PLAYSTATE_HPP
 
 #include "../handlers/State.hpp"
 
-class MenuState : public State {
+class PlayState : public State {
 public:
-    MenuState();
+    PlayState();
     int handleInput();
     void update(float deltatime);
     void render(sf::RenderWindow& gamewindow);
+private:
 };
 
-#endif /* MENUSTATE_HPP */
+#endif /* PLAYSTATE_HPP */

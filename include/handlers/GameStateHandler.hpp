@@ -10,6 +10,8 @@
 class GameStateHandler {
 public:
     GameStateHandler();
+    int handleInput();
+    void render(sf::RenderWindow& gamewindow);
     int getNumStates() { return gamestates.size(); }
 private:
     std::stack<State*> gamestates;

@@ -11,12 +11,11 @@ public:
     Game();
     int exec();
     void handleInput();
-    void update();
+    void update(float deltatime);
     void render();
 private:
     sf::RenderWindow* gamewindow;
     GameStateHandler* gamestatehandler;
-    float deltatime;
 };
 
 #endif /* GAME_HPP */

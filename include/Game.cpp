@@ -1,4 +1,6 @@
 
+#include <iostream>
+
 #include "Game.hpp"
 
 Game::Game()
@@ -12,13 +14,13 @@ Game::Game()
 int Game::exec() {
     sf::Clock clock;
     while(gamewindow->isOpen()) {
-        deltatime = clock.restart().asSeconds();
+        float deltatime = clock.restart().asSeconds();
 
         if(deltatime > 0.15f)
             deltatime = 0.15f;
 
         handleInput();
-        update();
+        update(deltatime);
         render();
     }
 
@@ -36,12 +38,19 @@ void Game::handleInput() {
         default:
             break;
         }
+
+        switch(gamestatehandler->handleInput()) {
+
+        }
     }
 }
 
-void Game::update() {}
+void Game::update(float deltatime) {}
 
 void Game::render() {
     gamewindow->clear(sf::Color::White);
+
+    gamestatehandler->render(*gamewindow);
+
     gamewindow->display();
 }
