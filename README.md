@@ -1,3 +1,3 @@
 # LetsPlayOutside
 
-UML: https://jii.moe/EJ6egnZp.xml
+UML: https://www.draw.io/#LLPO.xml
