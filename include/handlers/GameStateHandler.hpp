@@ -1,4 +1,7 @@
 
+#ifndef GAMESTATEHANDLER_HPP
+#define GAMESTATEHANDLER_HPP
+
 #include <SFML/Graphics.hpp>
 #include <stack>
 
@@ -7,7 +10,9 @@
 class GameStateHandler {
 public:
     GameStateHandler();
+    int getNumStates() { return gamestates.size(); }
 private:
     std::stack<State*> gamestates;
-    int numstates_;
 };
+
+#endif /* GAMESTATEHANDLER_HPP */

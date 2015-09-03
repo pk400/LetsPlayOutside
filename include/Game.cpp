@@ -2,7 +2,8 @@
 #include "Game.hpp"
 
 Game::Game()
-    : gamewindow(new sf::RenderWindow()), gamestatehandler(new GameStateHandler()) {
+    : gamewindow(new sf::RenderWindow()),
+    gamestatehandler(new GameStateHandler()) {
     gamewindow->create(sf::VideoMode(800, 480), "Let's Play Outside");
     gamewindow->setVerticalSyncEnabled(true);
     gamewindow->setFramerateLimit(60);
@@ -29,9 +30,11 @@ void Game::handleInput() {
 
     while(gamewindow->pollEvent(event)) {
         switch(event.type) {
-            case sf::Event::Closed:
-                gamewindow->close();
-                break;
+        case sf::Event::Closed:
+            gamewindow->close();
+            break;
+        default:
+            break;
         }
     }
 }

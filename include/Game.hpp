@@ -1,4 +1,7 @@
 
+#ifndef GAME_HPP
+#define GAME_HPP
+
 #include <SFML/Graphics.hpp>
 
 #include "handlers/GameStateHandler.hpp"
@@ -15,3 +18,5 @@ private:
     GameStateHandler* gamestatehandler;
     float deltatime;
 };
+
+#endif /* GAME_HPP */

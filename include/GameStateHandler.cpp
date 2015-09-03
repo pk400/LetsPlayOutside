@@ -1,5 +1,8 @@
 
 #include "handlers/GameStateHandler.hpp"
+#include "states/MenuState.hpp"
 
-GameStateHandler::GameStateHandler()
-    : numstates_(0) {}
+GameStateHandler::GameStateHandler() {
+    State* menustate = new MenuState();
+    gamestates.push(menustate);
+}
