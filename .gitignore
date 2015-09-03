@@ -1,6 +1,6 @@
-.swp
-.cbp
-.depend
-.layout
-.o
+*.swp
+*.cbp
+*.depend
+*.layout
+*.o
 obj
