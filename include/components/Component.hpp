@@ -7,6 +7,6 @@ public:
     // update
     // render
 protected:
-}
+};
 
 #endif /* COMPONENT_HPP */
