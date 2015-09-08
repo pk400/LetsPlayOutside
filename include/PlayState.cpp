@@ -2,10 +2,10 @@
 #include "states/PlayState.hpp"
 
 PlayState::PlayState() {
-    background.setGameObject("assets/backgrounds/bg_mountains.png");
+    world = new World(0);
 
     // TODO: change this to player position
-    camera = new Camera(sf::Vector2f(100.f, 100.f), sf::Vector2f(400.f, 240.f));
+    camera = new Camera(sf::Vector2f(400.f, 120.f), sf::Vector2f(800 / 1.5, 480 / 1.5f));
 }
 
 int PlayState::handleInput() {
@@ -17,8 +17,7 @@ void PlayState::update(float deltatime) {
 }
 
 void PlayState::render(sf::RenderWindow& gamewindow) {
-    gamewindow.clear(sf::Color::Red);
+    world->render(gamewindow);
 
-    gamewindow.draw(background.getSprite());
-    gamewindow.setView(camera->getView());
+    //gamewindow.setView(camera->getView());
 }

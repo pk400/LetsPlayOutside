@@ -12,6 +12,7 @@ public:
     void setSprite() { sprite.setTexture(texture); }
 
     void setScale(sf::Vector2f amount) { sprite.setScale(amount); }
+    void setPosition(sf::Vector2f amount) { sprite.setPosition(amount); }
 
     sf::Sprite getSprite() { return sprite; }
 protected:

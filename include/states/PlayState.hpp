@@ -3,7 +3,7 @@
 #define PLAYSTATE_HPP
 
 #include "../handlers/State.hpp"
-#include "../objects/Background.hpp"
+#include "../world/World.hpp"
 #include "../handlers/Camera.hpp"
 
 class PlayState : public State {
@@ -13,7 +13,7 @@ public:
     void update(float deltatime);
     void render(sf::RenderWindow& gamewindow);
 private:
-    Background background;
+    World* world;
     Camera* camera;
 };
 
