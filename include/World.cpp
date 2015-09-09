@@ -8,7 +8,8 @@ World::World(int levelid) {
             background.setScale(sf::Vector2f(2.f, 2.f));
             background.setPosition(sf::Vector2f(0.f, 240.f - 32.f));
 
-
+            // TODO: create stack of platforms aligned horizonatally underneath background
+            // platform.create();
 
             break;
         }

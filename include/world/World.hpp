@@ -5,6 +5,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "../objects/Background.hpp"
+#include "../objects/Platform.hpp"
 
 class World {
 public:
@@ -12,6 +13,7 @@ public:
     void render(sf::RenderWindow& gamewindow);
 private:
     Background background;
+    Platform platform;
 };
 
 #endif /* WORLD_HPP */
