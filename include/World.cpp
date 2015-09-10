@@ -6,10 +6,11 @@ World::World(int levelid) {
         case 0: {
             background.setGameObject("assets/backgrounds/bg_mountains.png");
             background.setScale(sf::Vector2f(2.f, 2.f));
-            background.setPosition(sf::Vector2f(0.f, 240.f - 32.f));
+            background.setPosition(sf::Vector2f(0.f, 240.f - 30.f));
 
             // TODO: create stack of platforms aligned horizonatally underneath background
-            // platform.create();
+            platform.setGameObject("assets/sprites/grass-dirt.png");
+            platform.setPosition(sf::Vector2f(0.f, 450.f));
 
             break;
         }
@@ -20,4 +21,5 @@ World::World(int levelid) {
 void World::render(sf::RenderWindow& gamewindow) {
     gamewindow.clear(sf::Color(254, 189, 104));
     gamewindow.draw(background.getSprite());
+    gamewindow.draw(platform.getSprite());
 }

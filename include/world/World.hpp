@@ -3,6 +3,7 @@
 #define WORLD_HPP
 
 #include <SFML/Graphics.hpp>
+#include <stack>
 
 #include "../objects/Background.hpp"
 #include "../objects/Platform.hpp"

@@ -6,7 +6,8 @@
 
 class Platform : public GameObject {
 public:
-    Platform();
+    Platform() {}
+    void setGameObject(const std::string texturepath);
 private:
 
 };
