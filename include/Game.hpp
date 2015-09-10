@@ -4,6 +4,9 @@
 
 #include <SFML/Graphics.hpp>
 
+static int WINDOW_WIDTH = 800.f;
+static int WINDOW_HEIGHT = 480.f;
+
 #include "handlers/GameStateHandler.hpp"
 
 class Game {

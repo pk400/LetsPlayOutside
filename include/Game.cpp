@@ -45,7 +45,9 @@ void Game::handleInput() {
     }
 }
 
-void Game::update(float deltatime) {}
+void Game::update(float deltatime) {
+    gamestatehandler->update(deltatime);
+}
 
 void Game::render() {
     gamewindow->clear(sf::Color::White);

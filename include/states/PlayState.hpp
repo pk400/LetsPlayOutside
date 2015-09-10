@@ -4,6 +4,7 @@
 
 #include "../handlers/State.hpp"
 #include "../world/World.hpp"
+#include "../objects/Player.hpp"
 #include "../handlers/Camera.hpp"
 
 class PlayState : public State {
@@ -14,6 +15,7 @@ public:
     void render(sf::RenderWindow& gamewindow);
 private:
     World* world;
+    Player* player;
     Camera* camera;
 };
 

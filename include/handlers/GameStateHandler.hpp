@@ -11,6 +11,7 @@ class GameStateHandler {
 public:
     GameStateHandler();
     int handleInput();
+    void update(float deltatime);
     void render(sf::RenderWindow& gamewindow);
     int getNumStates() { return gamestates.size(); }
 private:

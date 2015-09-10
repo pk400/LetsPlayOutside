@@ -11,6 +11,10 @@ GameStateHandler::GameStateHandler() {
     gamestates.push(playstate);
 }
 
+void GameStateHandler::update(float deltatime) {
+    gamestates.top()->update(deltatime);
+}
+
 int GameStateHandler::handleInput() {
     return gamestates.top()->handleInput();
 }
