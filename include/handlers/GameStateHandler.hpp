@@ -7,6 +7,12 @@
 
 #include "State.hpp"
 
+/*
+ * The game consists of different game states than change throughout the life
+ * of the game. Menustate, Playstate, Pausestate, for example. The
+ * GameStateHandler manages all those states and the main Game class only knows
+ * about the top-most state.
+ */
 class GameStateHandler {
 public:
     GameStateHandler();

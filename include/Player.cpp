@@ -11,7 +11,6 @@ Player::Player()
     isMovingRight(false),
     isJumping(false),
     isAtVerticalPeak(false) {
-
 }
 
 void Player::setGameObject(const std::string texturepath) {
